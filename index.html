@@ -12,91 +12,6 @@
             emailjs.init('UnC_hT75BfMvW5y_J');
         })();
     </script>
-    <script src="script.js"></script>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('./doc/background_image.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: rgba(255, 255, 255, 0.9);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        .header-title .name {
-            margin: 0;
-            font-size: 1.8em;
-        }
-        .nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-        .nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .fullscreen {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-        }
-        .hidden {
-            display: none;
-        }
-        .home-container {
-            display: flex;
-            gap: 50px;
-        }
-        .portfolio-image {
-            max-width: 200px;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .social-icons img {
-            width: 32px;
-            margin-right: 10px;
-            transition: transform 0.3s ease;
-        }
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
-        .resume-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .education-item img, .resume-section img {
-            width: 100px;
-            height: auto;
-        }
-        .download-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -126,7 +41,7 @@
                 </div>
             </div>
             <div>
-                <h1>Welcome to My Portfolio</h1>
+                <h1>Welcome to My Portfolio <span class="wave-emoji">👋</span></h1>
                 <h2>About Me</h2>
                 <p>
                     I am a Salesforce Commerce Cloud Developer with over 4 years of experience in B2C e-commerce solutions, 
@@ -143,17 +58,44 @@
                 <li>Salesforce Technologies: SFCC, LWC, Salesforce APIs</li>
                 <li>Programming: JavaScript, HTML5, CSS3, APEX</li>
             </ul>
+            
+            <h1>Experience</h1>
+            <ul>
+                <li>
+                    <h4>Salesforce Commerce Cloud Developer</h4>
+                    <p>Cognizant Technology Solutions | Sep 2022 – Present</p>
+                    <ul>
+                        <li>Over 4 years of experience in Salesforce Commerce Cloud (SFCC), specializing in SFRA architecture, Business Manager configurations, and Job and Service frameworks.</li>
+                        <li>Skilled in developing modern, responsive applications using Lightning Web Components (LWC) with seamless Salesforce integration.</li>
+                        <li>Extensive expertise in resolving high-priority incidents (P1/P2), proactive system monitoring, and enhancing e-commerce platform stability.</li>
+                        <li>Successfully resolved 500+ stuck orders monthly, reducing order processing delays by 15%-20% and significantly improving customer satisfaction.</li>
+                        <li>Effectively managed and resolved 50+ P1/P2 incidents annually, enhancing system stability and uptime by 25%-30%.</li>
+                        <li>Addressed 200+ CSR issues annually, streamlining customer support workflows and boosting resolution efficiency by 20%-25%.</li>
+                        <li>Extensive experience in Salesforce Marketing Cloud tools, including Journey Builder, Automation Studio, and Email Studio, for creating seamless marketing workflows.</li>
+                        <li>Recognized for team leadership and mentoring, driving quality compliance through innovative solutions and comprehensive documentation practices.</li>
+                    </ul>
+                </li>
+            </ul>
+            
             <h1>Education</h1>
             <ul>
                 <li>
                     <h4>M.Tech in Data and Computational Sciences</h4>
-                    <img src="./doc/iit_jodhpur_logo.png" alt="IIT Jodhpur">
+                    <p><img src="./doc/iit_jodhpur_logo.png" alt="IIT Jodhpur" class="education-logo"> Indian Institute of Technology (IIT), Jodhpur (2021–2023)</p>
+                </li>
+                <li>
+                    <h4>M.B.A in Operations Management</h4>
+                    <p><img src="./doc/nmims_logo.png" alt="NMIMS" class="education-logo"> NMIMS, Distance Education (2021–2023)</p>
+                </li>
+                <li>
+                    <h4>B.Tech in Electronics and Communication Engineering</h4>
+                    <p><img src="./doc/kalasalingam_logo.png" alt="Kalasalingam University" class="education-logo"> Kalasalingam Academy of Research and Education (2016–2020)</p>
                 </li>
             </ul>
-            <h1>Experience</h1>
-            <ul>
-                <li>Salesforce Commerce Cloud Developer</li>
-            </ul>
+
+            <div>
+                <a href="./doc/Resume_KeerthanaT.pdf" class="download-link" download>Download CV</a>
+            </div>
         </div>
     </section>
 
@@ -174,34 +116,6 @@
         <p>© 2024 Keerthana T | keerthivanan@gmail.com</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sections = {
-                home: document.getElementById('home'),
-                resume: document.getElementById('resume'),
-                contact: document.getElementById('contact'),
-            };
-            const links = {
-                home: document.getElementById('home-link'),
-                resume: document.getElementById('resume-link'),
-                contact: document.getElementById('contact-link'),
-            };
-
-            function hideAllSections() {
-                Object.values(sections).forEach(section => section.style.display = 'none');
-            }
-
-            hideAllSections();
-            sections.home.style.display = 'block';
-
-            Object.entries(links).forEach(([key, link]) => {
-                link.addEventListener('click', event => {
-                    event.preventDefault();
-                    hideAllSections();
-                    sections[key].style.display = 'block';
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
