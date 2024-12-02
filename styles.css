@@ -111,7 +111,26 @@ header {
     height: auto;
     margin-top: 10px;
 }
+.education-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+}
 /* Contact Form */
 #contact-form {
     display: flex;
@@ -146,7 +165,16 @@ header {
 #contact-form button:hover {
     background: #0056b3;
 }
+.wave-emoji {
+    font-size: 1.5rem; /* Adjust size as needed */
+    animation: wave-animation 1.5s infinite;
+    display: inline-block;
+}
 
+@keyframes wave-animation {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+}
 /* Footer */
 footer {
     text-align: center;
