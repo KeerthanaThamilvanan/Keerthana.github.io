@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keerthana T Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
             emailjs.init('UnC_hT75BfMvW5y_J');
@@ -17,8 +16,8 @@
 <body>
     <header class="header">
         <div class="header-title">
-            <h1 class="name" data-aos="fade-right">Keerthana T</h1>
-            <h2 class="subtitle" data-aos="fade-left">Salesforce Commerce Cloud Developer</h2>
+            <h1 class="name">Keerthana T</h1>
+            <h2 class="subtitle">Salesforce Commerce Cloud Developer</h2>
         </div>
         <nav class="nav">
             <ul>
@@ -30,17 +29,15 @@
     </header>
 
     <section id="home" class="fullscreen">
-        <div class="home-container" data-aos="fade-up">
+        <div class="home-container">
             <div class="home-left">
-                <div class="home-image" data-aos="zoom-in">
+                <div class="home-image">
                     <img src="./doc/Profile_icon.jpg" alt="Profile Image" class="portfolio-image">
                 </div>
                 <div class="home-text">
                     <h1 class="name">Keerthana T</h1>
                     <div class="line"></div> 
-                    <span class="job-title">
-                        <span id="typed"></span>
-                    </span>
+                    <span class="job-title">Salesforce Commerce Cloud Developer</span>
                 </div>
                 <div class="social-icons">
                     <a href="https://linkedin.com/in/keerthana-thamilvanan" target="_blank">
@@ -52,8 +49,9 @@
                 </div>
             </div>
             <div class="home-right">
-                <h1 data-aos="fade-right">Welcome to My Portfolio</h1>
-                <p data-aos="fade-left">
+                <h1>Welcome to My Portfolio</h1>
+                <h2>About Me</h2>
+                <p>
                     I am a Salesforce Commerce Cloud Developer with over 4 years of experience in B2C e-commerce solutions, 
                     specializing in SFRA architecture, Business Manager configurations, and Lightning Web Components (LWC). 
                     My expertise includes enhancing platform stability, resolving high-priority incidents, and automating 
@@ -62,10 +60,10 @@
             </div>
         </div>
     </section>
-
+    
     <section id="resume" class="fullscreen hidden">
         <div class="resume-container">
-            <div class="resume-section skills" data-aos="fade-up">
+            <div class="resume-section skills">
                 <h1>Skills</h1>
                 <ul>
                     <li>Salesforce Technologies: SFCC, LWC, Salesforce APIs</li>
@@ -74,7 +72,7 @@
                     <li>Certifications: Salesforce Certified AI Associate</li>
                 </ul>
             </div>
-            <div class="resume-section experience" data-aos="fade-right">
+            <div class="resume-section experience">
                 <h1>Experience</h1>
                 <h4>Salesforce Commerce Cloud Developer</h4>
                 <p>Cognizant Technology Solutions Private Limited | Sep 2022 – Present</p>
@@ -83,21 +81,30 @@
                     <li>Designed reusable frameworks for streamlined workflows.</li>
                 </ul>
             </div>
-            <div class="resume-section education" data-aos="fade-left">
-                <h1>Education</h1>
-                <div class="education-item">
-                    <h4>M.Tech in Data and Computational Sciences</h4>
-                    <p>Indian Institute of Technology (IIT), Jodhpur (2021–2023)</p>
-                </div>
-                <div class="education-item">
-                    <h4>M.B.A in Operations Management</h4>
-                    <p>NMIMS, Distance Education (2021–2023)</p>
-                </div>
-                <div class="education-item">
-                    <h4>B.Tech in Electronics and Communication Engineering</h4>
-                    <p>Kalasalingam Academy of Research and Education (2016–2020)</p>
-                </div>
-            </div>
+            <div class="resume-section education">
+    <h1>Education</h1>
+    <div class="education-item">
+        <h4>M.Tech in Data and Computational Sciences</h4>
+        <p>
+            <img src="./doc/IITJ_logo.png" alt="IIT Jodhpur Logo" class="college-logo"> 
+            Indian Institute of Technology (IIT), Jodhpur (2021–2023)
+        </p>
+    </div>
+    <div class="education-item">
+        <h4>M.B.A in Operations Management</h4>
+        <p>
+            <img src="./doc/nmims_logo.png" alt="NMIMS Logo" class="college-logo">
+            NMIMS, Distance Education (2021–2023)
+        </p>
+    </div>
+    <div class="education-item">
+        <h4>B.Tech in Electronics and Communication Engineering</h4>
+        <p>
+            <img src="./doc/kalasalingam_icon..jpeg" alt="Kalasalingam University Logo" class="college-logo"> 
+            Kalasalingam Academy of Research and Education (2016–2020)
+        </p>
+    </div>
+</div>
             <div class="resume-section cv">
                 <h1>Resume</h1>
                 <a href="./doc/Resume_KeerthanaT.pdf" class="download-link" download>Download CV</a>
@@ -105,7 +112,7 @@
         </div>
     </section>
 
-    <section id="contact" class="fullscreen hidden" data-aos="fade-in">
+    <section id="contact" class="fullscreen hidden">
         <h2>Contact Me</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
@@ -122,15 +129,33 @@
         <p>© 2024 Keerthana T | keerthivanan@gmail.com</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = {
+                home: document.getElementById('home'),
+                resume: document.getElementById('resume'),
+                contact: document.getElementById('contact'),
+            };
+            const links = {
+                home: document.getElementById('home-link'),
+                resume: document.getElementById('resume-link'),
+                contact: document.getElementById('contact-link'),
+            };
 
-        new Typed('#typed', {
-            strings: ["Salesforce Developer", "E-commerce Specialist", "LWC Expert"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
+            function hideAllSections() {
+                Object.values(sections).forEach(section => section.style.display = 'none');
+            }
+
+            hideAllSections();
+            sections.home.style.display = 'block';
+
+            Object.entries(links).forEach(([key, link]) => {
+                link.addEventListener('click', event => {
+                    event.preventDefault();
+                    hideAllSections();
+                    sections[key].style.display = 'block';
+                });
+            });
         });
     </script>
 </body>
