@@ -3,8 +3,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f0f8; /* Light pinkish background */
-    color: #4a4a4a; /* Neutral dark gray for text */
+    background-color: #f7f0f8;
+    color: #333;
 }
 
 /* Header Styles */
@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #ffffff; /* White background for contrast */
+    background-color: rgba(255, 255, 255, 0.9);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -23,96 +23,208 @@ header {
 .header-title .name {
     margin: 0;
     font-size: 1.8em;
-    color: #4a4a4a; /* Neutral dark gray */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav a {
     text-decoration: none;
-    color: #6c63ff; /* Soft purple */
+    color: #333;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav a:hover {
-    color: #4a4a4a; /* Neutral dark gray */
+    color: #007BFF;
 }
 
 /* About Section */
 .home-container {
-    background: #ffffff; /* White for a clean look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px;
+    background: #f7f0f8;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: #4a4a4a;
 }
 
 /* Profile Image - Hexagonal Shape */
 .portfolio-image {
-    border: 4px solid #f7f0f8; /* Matches the background */
+    width: 180px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #ddd;
 }
 
 /* Social Icons */
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center align */
     gap: 20px;
     align-items: center;
     margin-top: 20px;
 }
 
-.social-icons img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2); /* Lightens on hover */
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Resume Section */
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+/* Resume Section Styles */
 #resume {
-    background: #ffffff; /* White for clarity */
-    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 20px;
+    background: #f7f0f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .resume-container h1 {
-    color: #6c63ff; /* Soft purple for headings */
-    border-bottom: 2px solid #6c63ff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.resume-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-container li {
+    margin-bottom: 20px;
+}
+
+.resume-container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
 }
 
 .resume-container p {
-    color: #4a4a4a; /* Neutral dark gray */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
 }
 
-/* Logos */
+/* Company and Education Logos */
 .experience-logo, .education-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: contain;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Download CV Link */
 .download-link {
-    background: #6c63ff; /* Soft purple */
-    color: #ffffff; /* White for readability */
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
 }
 
 .download-link:hover {
-    background: #5046d1; /* Slightly darker purple */
+    background: #0056b3;
+    filter: brightness(1.2);
 }
 
 /* Contact Form */
 #contact-form {
-    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #contact-form button {
-    background: #6c63ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 #contact-form button:hover {
-    background: #5046d1;
+    background: #0056b3;
+    filter: brightness(1.2);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #6c63ff, #5046d1);
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Animation for Wave Emoji */
 .wave-emoji {
-    color: #6c63ff; /* Matches theme */
+    font-size: 1.5rem;
+    animation: wave-animation 1.5s infinite;
+    display: inline-block;
 }
+
+@keyframes wave-animation {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+} 
