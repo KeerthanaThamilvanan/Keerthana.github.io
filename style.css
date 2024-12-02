@@ -144,18 +144,29 @@
     }
 
     /* Resume section styles */
-    .company-logo {
-        width: 50px; /* Adjust size as needed */
-        height: auto;
-        vertical-align: middle; /* Aligns logo with text */
-        margin-right: 8px; /* Space between logo and text */
-    }
+.company-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns logo with text */
+    margin-right: 8px; /* Space between logo and text */
+}
 
-    .resume-container {
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.college-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.resume-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
     .resume-section {
         text-align: left;
