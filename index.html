@@ -3,124 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keerthana T Portfolio</title>
+    <title>Keerthana T | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init('UnC_hT75BfMvW5y_J');
-        })();
-    </script>
 </head>
 <body>
     <header class="header">
-        <div class="header-title">
-            <h1 class="name">Keerthana T</h1>
-            <h2 class="subtitle">Salesforce Commerce Cloud Developer</h2>
-        </div>
-        <nav class="nav">
+        <nav>
             <ul>
-                <li><a href="#" id="home-link" style="font-weight:bolder">About Me</a></li>
-                <li><a href="#" id="resume-link">Resume</a></li>
-                <li><a href="#" id="contact-link">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="fullscreen">
+    <section id="home" class="section">
         <div class="home-container">
-            <div class="home-left">
-                <div class="home-image">
-                    <img src="./doc/Profile_icon.jpg" alt="Profile Image" class="portfolio-image">
-                </div>
-                <div class="home-text">
-                    <h1 class="name">Keerthana T</h1>
-                    <div class="line"></div> 
-                    <span class="job-title">Salesforce Commerce Cloud Developer</span>
-                </div>
-                <div class="social-icons">
-                    <a href="https://linkedin.com/in/keerthana-thamilvanan" target="_blank">
-                        <img src="./doc/linkedin_icon.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <a href="https://github.com/your-github-profile" target="_blank">
-                        <img src="./doc/github_icon.png" alt="GitHub" class="social-icon">
-                    </a>
-                </div>
+            <img src="./doc/Profile_icon.jpg" alt="Keerthana T" class="profile-img">
+            <h1>Hi, I'm <span class="highlight">Keerthana T</span></h1>
+            <p>Salesforce Commerce Cloud Developer</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/keerthana-thamilvanan" target="_blank">
+                    <img src="./doc/linkedin_icon.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/your-github-profile" target="_blank">
+                    <img src="./doc/github_icon.png" alt="GitHub" class="social-icon">
+                </a>
             </div>
-            <div class="home-right">
-                <h1>Welcome to My Portfolio</h1>
-                <h2>About Me</h2>
-                <p>
-                    I am a Salesforce Commerce Cloud Developer with over 4 years of experience in B2C e-commerce solutions, 
-                    specializing in SFRA architecture, Business Manager configurations, and Lightning Web Components (LWC). 
-                    My expertise includes enhancing platform stability, resolving high-priority incidents, and automating 
-                    marketing workflows with Salesforce Marketing Cloud.
-                </p>
-            </div>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
     </section>
-    
-    <section id="resume" class="fullscreen hidden">
-        <div class="resume-container">
-            <div class="resume-section skills">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Salesforce Technologies: SFCC, LWC, Salesforce APIs</li>
-                    <li>Programming: JavaScript, HTML5, CSS3, APEX</li>
-                    <li>Tools: VSCode, JIRA, Confluence</li>
-                    <li>Certifications: Salesforce Certified AI Associate</li>
-                </ul>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a Salesforce Commerce Cloud Developer with 4+ years of experience in building scalable e-commerce solutions. I specialize in SFRA architecture, Business Manager configurations, and Lightning Web Components. I am passionate about enhancing platform stability, resolving high-priority incidents, and automating marketing workflows using Salesforce Marketing Cloud.
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Salesforce Technologies: SFCC, LWC, Salesforce APIs</li>
+            <li>Programming: JavaScript, HTML5, CSS3, APEX</li>
+            <li>Tools: VSCode, JIRA, Confluence</li>
+            <li>Certifications: Salesforce Certified AI Associate</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>E-commerce Platform</h3>
+                <p>Built a scalable e-commerce platform using SFCC with integrated payment and marketing features.</p>
             </div>
-            <div class="resume-section experience">
-                <h1>Experience</h1>
-                <h4>Salesforce Commerce Cloud Developer</h4>
-                <p>Cognizant Technology Solutions Private Limited | Sep 2022 – Present</p>
-                <ul>
-                    <li>Integrated Salesforce APIs with custom components to extend functionality.</li>
-                    <li>Designed reusable frameworks for streamlined workflows.</li>
-                </ul>
-            </div>
-            <div class="resume-section education">
-    <h1>Education</h1>
-    <div class="education-item">
-        <h4>M.Tech in Data and Computational Sciences</h4>
-        <p>
-            <img src="./doc/IITJ_logo.png" alt="IIT Jodhpur Logo" class="college-logo"> 
-            Indian Institute of Technology (IIT), Jodhpur (2021–2023)
-        </p>
-    </div>
-    <div class="education-item">
-        <h4>M.B.A in Operations Management</h4>
-        <p>
-            <img src="./doc/nmims_logo.png" alt="NMIMS Logo" class="college-logo">
-            NMIMS, Distance Education (2021–2023)
-        </p>
-    </div>
-    <div class="education-item">
-        <h4>B.Tech in Electronics and Communication Engineering</h4>
-        <p>
-            <img src="./doc/kalasalingam_icon..jpeg" alt="Kalasalingam University Logo" class="college-logo"> 
-            Kalasalingam Academy of Research and Education (2016–2020)
-        </p>
-    </div>
-</div>
-            <div class="resume-section cv">
-                <h1>Resume</h1>
-                <a href="./doc/Resume_KeerthanaT.pdf" class="download-link" download>Download CV</a>
+            <div class="project">
+                <h3>Marketing Automation</h3>
+                <p>Automated workflows in Salesforce Marketing Cloud to enhance customer engagement and drive sales.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="fullscreen hidden">
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <ul>
+            <li>
+                <strong>Education:</strong>
+                <ul>
+                    <li>M.Tech in Data and Computational Sciences, IIT Jodhpur (2021–2023)</li>
+                    <li>M.B.A in Operations Management, NMIMS (2021–2023)</li>
+                    <li>B.Tech in Electronics and Communication, Kalasalingam Academy of Research and Education (2016–2020)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Experience:</strong>
+                <ul>
+                    <li>
+                        Salesforce Commerce Cloud Developer, Cognizant Technology Solutions (Sep 2022 – Present)
+                        <ul>
+                            <li>Integrated Salesforce APIs with custom components.</li>
+                            <li>Designed reusable frameworks for streamlined workflows.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./doc/Resume_KeerthanaT.pdf" class="btn" download>Download CV</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
@@ -129,34 +118,6 @@
         <p>© 2024 Keerthana T | keerthivanan@gmail.com</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sections = {
-                home: document.getElementById('home'),
-                resume: document.getElementById('resume'),
-                contact: document.getElementById('contact'),
-            };
-            const links = {
-                home: document.getElementById('home-link'),
-                resume: document.getElementById('resume-link'),
-                contact: document.getElementById('contact-link'),
-            };
-
-            function hideAllSections() {
-                Object.values(sections).forEach(section => section.style.display = 'none');
-            }
-
-            hideAllSections();
-            sections.home.style.display = 'block';
-
-            Object.entries(links).forEach(([key, link]) => {
-                link.addEventListener('click', event => {
-                    event.preventDefault();
-                    hideAllSections();
-                    sections[key].style.display = 'block';
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
