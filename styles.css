@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('./doc/background_image.jpg') no-repeat center center fixed;
+    background: url('./doc/background_icon.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
@@ -66,16 +66,19 @@ header {
 }
 
 .portfolio-image {
-    max-width: 200px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Make it circular */
+    border-radius: 50%; /* Circular shape */
+    border: 4px solid #fff; /* Optional border for styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* Social Icons */
 .social-icons {
-    margin-top: 20px;
+    display: flex;
+    gap: 10px; 
+    align-items: center;
 }
-
 .social-icons img {
     width: 32px;
     height: 32px;
